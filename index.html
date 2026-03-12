@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mind Logic</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="symbols"></div>
+
+<h1 class="title">Mind Logic</h1>
+
+<!-- MENU -->
+<div class="container" id="menu">
+
+<input type="text" id="playerName" placeholder="Enter your name" class="name-box">
+
+<button class="enter-btn" onclick="enterGame()">Enter</button>
+
+<div class="language">
+<button onclick="setLang('en')">English</button>
+<button onclick="setLang('tl')">Tagalog</button>
+</div>
+
+</div>
+
+<!-- INSTRUCTIONS -->
+<div class="instructions hidden" id="instructions">
+
+<h2>Instructions</h2>
+
+<p>
+Welcome to <b>Mind Logic</b>! This web game has 3 modes: Easy Mode, Normal Mode, and Hard Mode.
+</p>
+
+<p>
+In this game, you will answer questions related to <b>Discrete Structures</b> lessons such as
+Sets, Relations, Functions, Logic, and Probability.
+</p>
+
+<p>
+Each mode contains <b>shuffled questions</b>.
+</p>
+
+<p>
+You must reach at least <b>16 points</b> to win the game.
+</p>
+
+<p>
+If your score is <b>below 16 points</b>, the game will restart from the beginning and all questions will be shuffled again.
+</p>
+
+<p><b>Good Luck!</b></p>
+
+<button class="start-btn">Start Game</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
