@@ -10,14 +10,13 @@
 
 <div class="symbols"></div>
 
-<h1 class="title">Mind Logic</h1>
+<h1 class="title" id="titleText">Mind Logic</h1>
 
-<!-- MENU -->
 <div class="container" id="menu">
 
-<input type="text" id="playerName" placeholder="Enter your name" class="name-box">
+<input type="text" id="playerName" class="name-box" placeholder="Enter your name">
 
-<button class="enter-btn" onclick="enterGame()">Enter</button>
+<button class="enter-btn" id="enterBtn" onclick="enterGame()">Enter</button>
 
 <div class="language">
 <button onclick="setLang('en')">English</button>
@@ -26,35 +25,34 @@
 
 </div>
 
+
 <!-- INSTRUCTIONS -->
 <div class="instructions hidden" id="instructions">
 
-<h2>Instructions</h2>
+<h2 id="instructionTitle">Instructions</h2>
 
-<p>
-Welcome to <b>Mind Logic</b>! This web game has 3 modes: Easy Mode, Normal Mode, and Hard Mode.
+<p id="instructionText">
+Welcome to Mind Logic! This web game has 3 modes: Easy Mode, Normal Mode, and Hard Mode.
+In this game, you will answer questions related to Discrete Structures lessons such as
+Sets, Relations, Functions, Logic, and Probability. Each mode contains shuffled questions.
+You must reach at least 16 points to win the game. If your score is below 16 points,
+the game will restart from the beginning and all questions will be shuffled again.
+Good Luck!
 </p>
 
-<p>
-In this game, you will answer questions related to <b>Discrete Structures</b> lessons such as
-Sets, Relations, Functions, Logic, and Probability.
-</p>
+<button class="start-btn" id="startBtn" onclick="showModes()">Start Game</button>
 
-<p>
-Each mode contains <b>shuffled questions</b>.
-</p>
+</div>
 
-<p>
-You must reach at least <b>16 points</b> to win the game.
-</p>
 
-<p>
-If your score is <b>below 16 points</b>, the game will restart from the beginning and all questions will be shuffled again.
-</p>
+<!-- MODE SELECTION -->
+<div class="instructions hidden" id="modes">
 
-<p><b>Good Luck!</b></p>
+<h2 id="modeTitle">Select Mode</h2>
 
-<button class="start-btn">Start Game</button>
+<button class="start-btn" id="easyBtn">Easy Mode</button>
+<button class="start-btn" id="normalBtn">Normal Mode</button>
+<button class="start-btn" id="hardBtn">Hard Mode</button>
 
 </div>
 
